@@ -21,6 +21,7 @@ header {
     height: 100px;
     position: fixed;
     padding-top: 30px;
+    background-color: white;
 }
 
 header ul {
