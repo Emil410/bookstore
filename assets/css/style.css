@@ -43,6 +43,7 @@ header a {
 .logo_ul_li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .icon_header a {
@@ -86,6 +87,7 @@ header a {
     font-weight: 900;
     color: white;
     border: 0;
+    cursor: pointer;
     margin-top: 20px;
 }
 
@@ -108,6 +110,7 @@ header a {
     background-color: #FFFFFF;
     border: 0;
     font-size: 14px;
+    cursor: pointer;
     font-weight: 700;
     color: #241400;
 }
@@ -118,7 +121,7 @@ header a {
     margin: 0 auto;
     padding-top: 60px;
     flex-wrap: wrap;
-    gap: 36px;
+    gap: 33px;
 }
 
 #two_section .container {
@@ -190,7 +193,6 @@ header a {
 }
 
 footer {
-    height: 276px;
     background-color: #391F00;
     margin-top: 150px;
 }
@@ -255,6 +257,31 @@ footer .footer_words {
     .ds_flx {
         display: flex;
         justify-content: space-between;
+    }
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer .footer_words {
+        gap: 35px;
+    }
+    #footer_img {
+        width: 70%;
+    }
+    #footer_img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer .footer_words {
+        display: flex;
+        gap: 15px;
     }
 }
 
