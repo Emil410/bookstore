@@ -98,6 +98,9 @@ footer .footer_words {
 
 .numb_btn {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .numb_btn button {
@@ -110,6 +113,7 @@ footer .footer_words {
     background-color: transparent;
     color: #E16A00;
     border: 1px solid #E16A00;
+    cursor: pointer;
 }
 
 .numb_btn span {
@@ -186,6 +190,18 @@ footer .footer_words {
     display: flex;
     gap: 50px;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    footer .footer_words {
+        gap: 35px;
+    }
+    #footer_img {
+        width: 70%;
+    }
+    #footer_img img {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 320px) {

@@ -285,6 +285,59 @@ footer .footer_words {
     }
 }
 
+#welcome_section {
+    margin-top: 100px;
+}
+
+.welcome_admin {
+    width: 662px;
+    height: 544.31px;
+    background-color: white;
+    border: 1px solid #CECECE;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#welcome_section h3 {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.welcome_admin input {
+    width: 552.94px;
+    height: 70.54px;
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid #CECECE;
+    font-size: 19px;
+    font-weight: 400;
+    color: #797667;
+}
+
+#aside_main {
+    display: none;
+}
+
+.welcome_admin button {
+    font-size: 19px;
+    cursor: pointer;
+    font-weight: 700;
+    width: 552.94px;
+    height: 74.54px;
+    margin-top: 40px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 5px;
+    background-color: #E16A00;
+}
+
 @media only screen and (max-width: 320px) {
     #one_section {
         display: flex;
@@ -335,5 +388,30 @@ footer .footer_words {
     }
     #three_section i {
         font-size: 23px;
+    }
+    #welcome_section {
+        height: 1000px;
+    }
+    .welcome_admin {
+        width: 229.72px;
+        height: 311px;
+        padding-top: 30px;
+        border-radius: 5px;
+    }
+    .welcome_admin input {
+        width: 192px;
+        height: 40px;
+        font-size: 10px;
+    }
+    .welcome_admin button {
+        width: 192px;
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    #welcome_section h3 {
+        font-size: 20px;
+        width: 100px;
+        text-align: center;
     }
 }
