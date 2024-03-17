@@ -15,37 +15,6 @@
     max-width: 1140px;
 }
 
-header {
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    position: fixed;
-    padding-top: 30px;
-}
-
-header ul {
-    gap: 21px;
-    display: flex;
-}
-
-header a {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #241400;
-}
-
-.logo_ul_li {
-    display: flex;
-    justify-content: space-between;
-}
-
-.icon_header a {
-    font-size: 14px;
-    font-weight: 400;
-    padding-left: 10px;
-}
-
 footer {
     height: 276px;
     background-color: #391F00;
@@ -66,7 +35,7 @@ footer .container {
 
 footer .footer_words {
     display: flex;
-    gap: 100px;
+    gap: 50px;
 }
 
 #second_div_img {

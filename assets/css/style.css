@@ -1,57 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Courgette&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Courgette&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;500;700&family=Roboto:wght@300&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Monserrat', sans-serif;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1140px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    background-color: white;
-    top: 0;
-    width: 100%;
-    transition: background-color 0.3s ease;
-    height: 95px;
-    z-index: 1001;
-}
-
-header ul {
-    display: flex;
-    gap: 21px;
-}
-
-header a {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #241400;
-}
-
-.logo_ul_li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icon_header a {
-    font-size: 14px;
-    font-weight: 400;
-    padding-left: 10px;
-}
-
 .book_background {
     margin-top: 70px;
     width: 60%;
@@ -76,7 +24,6 @@ header a {
     font-size: 13px;
     font-weight: 400;
     line-height: 26px;
-    width: 370px;
 }
 
 #one_section button {
@@ -182,52 +129,15 @@ header a {
     font-family: Montserrat;
 }
 
-#three_section .follow {
-    padding-top: 150px;
-}
-
-.icons i {
-    font-size: 80px;
-    padding: 30px;
-    color: #241400;
-}
-
 footer {
     background-color: #391F00;
     margin-top: 150px;
-}
-
-footer img {
-    height: 68px;
 }
 
 footer .container {
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
-}
-
-footer .footer_words {
-    display: flex;
-    gap: 100px;
-}
-
-.footer_words span {
-    padding-top: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 35px;
-    color: #FFFFFF;
-}
-
-.footer_words a {
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 26px;
-    font-weight: 1900;
-    color: #FFFFFF;
 }
 
 .ds_flx {
@@ -258,84 +168,21 @@ footer .footer_words {
         display: flex;
         justify-content: space-between;
     }
-    footer .container {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 70px;
-        flex-direction: column;
-    }
 }
 
-@media only screen and (max-width: 768px) {
-    footer .footer_words {
-        gap: 35px;
+@media only screen and (max-width: 500px) {
+    .buttons {
+        width: 100%;
     }
-    #footer_img {
-        width: 70%;
-    }
-    #footer_img img {
+    #two_section button {
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    footer .footer_words {
-        display: flex;
-        gap: 15px;
+@media only screen and (max-width:500px) {
+    #two_section a {
+        width: 100%;
     }
-}
-
-#welcome_section {
-    margin-top: 100px;
-}
-
-.welcome_admin {
-    width: 662px;
-    height: 544.31px;
-    background-color: white;
-    border: 1px solid #CECECE;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-
-#welcome_section h3 {
-    font-size: 44px;
-    font-weight: 700;
-    font-family: 'Monserrat', sans-serif;
-}
-
-.welcome_admin input {
-    width: 552.94px;
-    height: 70.54px;
-    display: flex;
-    border-radius: 5px;
-    padding: 20px;
-    flex-direction: column;
-    border: 1px solid #CECECE;
-    font-size: 19px;
-    font-weight: 400;
-    color: #797667;
-}
-
-#aside_main {
-    display: none;
-}
-
-.welcome_admin button {
-    font-size: 19px;
-    cursor: pointer;
-    font-weight: 700;
-    width: 552.94px;
-    height: 74.54px;
-    margin-top: 40px;
-    color: #FFFFFF;
-    border: 0;
-    border-radius: 5px;
-    background-color: #E16A00;
 }
 
 @media only screen and (max-width: 320px) {
@@ -348,7 +195,6 @@ footer .footer_words {
     }
     #one_section p {
         font-size: 13px;
-        width: 290px;
     }
     #one_section button {
         width: 290px;

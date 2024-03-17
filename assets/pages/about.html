@@ -7,7 +7,9 @@
     <title>About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/about.css">
+    <script defer src="../js/app.js"></script>
 </head>
 
 <body>
@@ -33,13 +35,21 @@
                     </li>
                 </ul>
                 <div class="icon_header">
-                    <a href="../pages/admin_panel.html">
+                    <a href="#" id="joinLink">
                         <i class="fa-regular fa-user"></i> Join us
                     </a>
                 </div>
             </div>
         </div>
     </header>
+    <aside id="aside_main">
+        <div class="welcome_admin">
+            <h3>Join Us</h3>
+            <input type="text" name="" id="" placeholder="Full name">
+            <input type="mail" name="" id="" placeholder="Email">
+            <button>Join</button>
+        </div>
+    </aside>
     <section id="about_section">
         <div class="container">
             <div class="words_img">
@@ -65,9 +75,15 @@
                     Follow us on social media
                 </h3>
                 <div class="icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -116,6 +132,23 @@
                     <button>Request a call </button>
                 </div>
             </div>
+            <ul class="none">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/catalog.html">Catalog</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/about.html">About Store</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/search.html">Search</a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>

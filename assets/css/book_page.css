@@ -15,108 +15,6 @@
     max-width: 1140px;
 }
 
-header {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    background-color: white;
-    padding-top: 30px;
-}
-
-header ul {
-    gap: 21px;
-    display: flex;
-}
-
-header a {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #241400;
-}
-
-.logo_ul_li {
-    display: flex;
-    justify-content: space-between;
-}
-
-.icon_header a {
-    font-size: 14px;
-    font-weight: 400;
-    padding-left: 10px;
-}
-
-footer {
-    height: 276px;
-    background-color: #391F00;
-    margin-top: 150px;
-}
-
-footer img {
-    height: 68px;
-    margin-top: 50px;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 70px;
-    gap: 100px;
-}
-
-footer .footer_words {
-    display: flex;
-    gap: 100px;
-}
-
-.footer_words span {
-    padding-top: 10px;
-    font-family: 'Monserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 35px;
-    color: #FFFFFF;
-}
-
-.footer_words a {
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-    font-weight: 400;
-    font-family: 'Monserrat', sans-serif;
-    line-height: 26px;
-    font-weight: 1900;
-    color: #FFFFFF;
-}
-
-.numb_btn {
-    margin-top: 50px;
-}
-
-.numb_btn button {
-    font-family: 'Monserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 27px;
-    width: 136px;
-    height: 26px;
-    background-color: transparent;
-    color: #E16A00;
-    border: 1px solid #E16A00;
-}
-
-.numb_btn span {
-    font-family: 'Monserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 900;
-    line-height: 24px;
-}
-
-footer .footer_words {
-    display: flex;
-    gap: 100px;
-}
-
 #book_page_section button {
     width: 100px;
     height: 29px;
@@ -129,6 +27,7 @@ footer .footer_words {
     font-weight: 900;
     line-height: 24px;
     color: white;
+    cursor: pointer;
 }
 
 #book_page_section h3 {
@@ -241,22 +140,49 @@ footer .footer_words {
     width: 100%;
 }
 
-.icons i {
-    font-size: 80px;
-    padding: 30px;
-    color: #241400;
+#book_img img {
+    width: 100%;
 }
 
-.follow h3 {
-    font-family: 'Monserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 900;
-    line-height: 49px;
+.words a {
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
-.follow {
-    text-align: center;
-    margin-top: 200px;
+#book_img {
+    width: 1267px;
+}
+
+@media only screen and (max-width: 768px) {
+    #book_page_section .words_img {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .for_icon_div {
+        width: 100px;
+        height: 60px;
+        background-color: #E16A00;
+    }
+    .display_none {
+        display: none;
+    }
+    #book_page_section p {
+        font-family: 'Monserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    .words {
+        padding-top: 100px;
+        text-align: center;
+    }
+    #book_img {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -271,8 +197,5 @@ footer .footer_words {
         display: flex;
         flex-direction: column;
         gap: 30px;
-    }
-    .display_none {
-        display: none;
     }
 }

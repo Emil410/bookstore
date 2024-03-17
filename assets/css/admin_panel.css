@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Courgette&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Courgette&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;500;700&family=Roboto:wght@300&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@
 
 .left_div {
     padding-top: 93px;
-    padding-left: 32px;
 }
 
 .admin_panel_logo_div .line_span {
@@ -48,8 +46,7 @@
 }
 
 .left_div {
-    width: 355px;
-    height: 3000px;
+    width: 385px;
     background-color: #720418;
 }
 
@@ -106,12 +103,13 @@
 
 .admin_panel_logo_div .line {
     width: 160px;
-    border: 1px solid #FFFFFF;
+    height: 1px;
+    background: #fff;
 }
 
 #color {
     background-color: #e7e5e53d;
-
+    width: 100%;
 }
 
 .two_section {
@@ -131,6 +129,7 @@
 
 .icon_div {
     width: 63px;
+    cursor: pointer;
     height: 40px;
     border-radius: 34px;
     margin-left: 10px;
@@ -204,8 +203,7 @@
 }
 
 .input_spans {
-    width: 950px;
-    height: 599px;
+    width: 95%;
     border-radius: 20px;
     margin-top: 30px;
     background-color: #FFFFFF;
@@ -214,13 +212,11 @@
 .inp_span {
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    padding-top: 20px;
+    padding: 25px;
     gap: 10px;
 }
 
 .input_spans input {
-    width: 870px;
     height: 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 18px 0px #9EA8BD4F;
@@ -238,11 +234,11 @@
 }
 
 .input_spans button {
-    width: 870px;
+    width: 96%;
     height: 40px;
     border-radius: 10px;
-    margin-left: 40px;
-    margin-top: 30px;
+    margin: 27px;
+    cursor: pointer;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -258,60 +254,46 @@
     gap: 10px;
 }
 
-.two_the_line .input_spans {
-    height: 415px;
+@media only screen and (max-width: 500px) {
+    .down_gray {
+        width: 70%;
+    }
 }
-
-
 
 @media only screen and (max-width: 320px) {
     .left_div {
         display: none;
     }
-
     .admin_icon {
         display: none;
     }
-
     .input_icon input {
         width: 230px;
         height: 36px;
         border-radius: 36px;
     }
-
     .input_icon button {
         width: 38px;
         height: 32px;
         border-radius: 8px;
     }
-
     .input_icon i {
         font-size: 15px;
     }
-
     .icon_div {
         width: 38px;
         height: 32px;
     }
-
     .down_gray {
         width: 230px;
         height: 90px;
     }
-
     .input_spans {
         width: 270px;
     }
-
-    .two_the_line .input_spans {
-        height: 415px;
-        width: 350px;
-    }
-
     .book_form input {
         width: 220px;
     }
-
     .book_form button {
         width: 220px;
     }
