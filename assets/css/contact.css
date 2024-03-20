@@ -10,23 +10,6 @@
     font-family: Crimson Text;
 }
 
-.icons i {
-    font-size: 80px;
-    padding: 30px;
-    color: #241400;
-}
-
-.follow h3 {
-    font-size: 25px;
-    font-weight: 900;
-    line-height: 49px;
-}
-
-.follow {
-    text-align: center;
-    margin-top: 200px;
-}
-
 #contact_us_section {
     padding-top: 200px;
 }
@@ -38,7 +21,7 @@
 }
 
 #contact_us_section input {
-    width: 610.46px;
+    width: 50%;
     height: 75px;
     font-family: Crimson Text;
     font-size: 23px;
@@ -66,13 +49,8 @@
     gap: 30px;
 }
 
-#contact_us_section #note {
-    width: 1080px;
-    height: 153px;
-}
-
 #contact_us_section button {
-    width: 610.46px;
+    width: 50%;
     height: 75px;
     font-size: 23px;
     font-weight: 400;
@@ -89,6 +67,23 @@
 .button_div {
     text-align: center;
     margin-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    #contact_us_section button {
+        width: 70%;
+    }
+    #contact_us_section input {
+        width: 50%;
+        height: 75px;
+        font-family: Crimson Text;
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        border: 1px solid #CECECE;
+        padding: 20px;
+        line-height: 30px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -112,12 +107,6 @@
         font-size: 12px;
         width: 243px;
         height: 101px;
-        border-radius: 5px
-    }
-    #contact_us_section button {
-        font-size: 12px;
-        width: 243px;
-        height: 37px;
         border-radius: 5px
     }
     .one_inp {

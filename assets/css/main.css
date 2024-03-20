@@ -36,10 +36,16 @@ header ul {
 }
 
 header a {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #241400;
+}
+
+.active {
+    color: #E16A00;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .logo_ul_li {
@@ -49,7 +55,7 @@ header a {
 }
 
 .icon_header a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     padding-left: 10px;
 }
@@ -99,10 +105,6 @@ footer .container {
     background-color: transparent;
     color: #E16A00;
     border: 1px solid #E16A00;
-}
-
-#three_section .follow {
-    padding-top: 150px;
 }
 
 .numb_btn span {
@@ -191,7 +193,7 @@ footer ul {
 
 .welcome_admin {
     width: 662px;
-    height: 544.31px;
+    height: 500px;
     background-color: white;
     border: 1px solid #CECECE;
     margin: 0 auto;
@@ -206,6 +208,29 @@ footer ul {
     font-size: 44px;
     font-weight: 700;
     font-family: 'Monserrat', sans-serif;
+}
+
+#aside_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+#aside_main.hidden {
+    display: none;
+}
+
+.overlay {
+    background-color: #00000080;
+}
+
+.header-transparent {
+    background-color: transparent;
 }
 
 .welcome_admin input {
@@ -253,16 +278,6 @@ footer a {
     margin-top: 200px;
 }
 
-#aside_main {
-    display: none;
-    justify-content: center;
-    display: none;
-    position: absolute;
-    top: 200px;
-    left: 635px;
-    z-index: 999;
-}
-
 @media only screen and (max-width:1000px) {
     footer .container {
         gap: 0px;
@@ -282,7 +297,7 @@ footer a {
         width: 250px;
         margin: 0 auto;
     }
-    footer .footer_words {
+    .footer_words span {
         display: none;
     }
     .none {
@@ -323,5 +338,14 @@ footer a {
     }
     .follow {
         margin-top: 100px;
+    }
+    .footer_words span {
+        display: none;
+    }
+    .numb_btn {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 }

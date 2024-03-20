@@ -1,46 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Courgette&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;500&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Courgette&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;500;700&family=Roboto:wght@300&display=swap');
-footer {
-    height: 276px;
-    background-color: #391F00;
-    margin-top: 150px;
-}
-
-footer img {
-    height: 68px;
-    margin-top: 50px;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 70px;
-    gap: 100px;
-}
-
-footer .footer_words {
-    display: flex;
-    gap: 100px;
-}
-
-.footer_words span {
-    padding-top: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 35px;
-    color: #FFFFFF;
-}
-
-.footer_words a {
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 26px;
-    font-weight: 1900;
-    color: #FFFFFF;
-}
-
 .numb_btn {
     margin-top: 50px;
 }
@@ -60,12 +19,6 @@ footer .footer_words {
     font-size: 12px;
     font-weight: 900;
     line-height: 24px;
-}
-
-.icons i {
-    font-size: 80px;
-    padding: 30px;
-    color: #241400;
 }
 
 .follow h3 {
@@ -90,7 +43,7 @@ footer .footer_words {
 }
 
 #search_section input {
-    width: 433px;
+    width: 100%;
     height: 69.52px;
     border-radius: 5px;
     padding: 30px;
@@ -99,7 +52,7 @@ footer .footer_words {
 }
 
 #search_section button {
-    width: 433px;
+    width: 100%;
     height: 65px;
     background-color: #E16A00;
     border-radius: 5px;
@@ -117,27 +70,26 @@ footer .footer_words {
 
 .search_card {
     width: 801px;
-    height: 504px;
     padding-top: 30px;
     display: flex;
+    gap: 20px;
     box-shadow: 0px 4px 15px 0px #00000040;
 }
 
 #search_section .words_search_card {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     justify-content: space-between;
     padding-top: 30px;
 }
 
 #search_section img {
-    width: 220px;
-    height: 306px;
     margin: 50px 20px;
 }
 
 .words {
     padding-top: 30px;
+    width: 70%;
 }
 
 .words h3 {
@@ -151,13 +103,62 @@ footer .footer_words {
     font-size: 14px;
     font-weight: 400;
     line-height: 27px;
-    width: 460px;
 }
 
 .words span {
     font-size: 18px;
     font-weight: 400;
     line-height: 35px;
+}
+
+#img_in_search {
+    width: 250px;
+}
+
+#img_in_search img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #search_section .words_search_card {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .search_card {
+        width: 100%;
+        padding-top: 30px;
+        margin-top: 30px;
+        display: flex;
+    }
+    #search_section {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .search_card {
+        padding-top: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        box-shadow: 0px 0px 0px 0px #00000000;
+    }
+    #img_in_search {
+        width: 100%;
+    }
+    .words {
+        padding-top: 0px;
+        width: 100%;
+    }
+    .words p {
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+    }
 }
 
 @media only screen and (max-width: 320px) {

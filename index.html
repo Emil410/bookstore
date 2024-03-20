@@ -9,19 +9,30 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script defer src="./assets/js/app.js"></script>
+    <script defer src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/JoinUs.js"></script>
 </head>
 
 <body>
+    <aside id="aside_main" class="hidden">
+        <div class="welcome_admin">
+            <h3>Join Us</h3>
+            <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
+            <input type="email" name="email" id="join_email" placeholder="Email">
+            <button id="joinButton">Join</button>
+        </div>
+    </aside>
     <header>
         <div class="container">
             <div class="logo_ul_li">
                 <div id="img_header">
-                    <img src="./assets/imgs/Лого.png" alt="" />
+                    <a href="#">
+                        <img src="./assets/imgs/Лого.png" alt="" />
+                    </a>
                 </div>
                 <ul>
                     <li>
-                        <a href="./index.html">Home</a>
+                        <a href="./index.html" class="active">Home</a>
                     </li>
                     <li>
                         <a href="./assets/pages/catalog.html">Catalog</a>
@@ -58,14 +69,6 @@
                 </div>
             </div>
         </section>
-        <aside id="aside_main">
-            <div class="welcome_admin">
-                <h3>Join Us</h3>
-                <input type="text" name="" id="" placeholder="Full name">
-                <input type="mail" name="" id="" placeholder="Email">
-                <button>Join</button>
-            </div>
-        </aside>
         <section id="two_section">
             <div class="container">
                 <h3>Catalog</h3>

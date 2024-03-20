@@ -9,14 +9,16 @@
     />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/search.css">
-    <script defer src="../js/app.js"></script>
+    <script defer src="../js/JoinUs.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo_ul_li">
-                <img src="../imgs/Лого.png" alt="" />
+                <a href="../../index.html">
+                    <img src="../imgs/Лого.png" alt="">
+                </a>
                 <ul>
                     <li>
                         <a href="../../index.html">Home</a>
@@ -31,7 +33,7 @@
                         <a href="../pages/contact.html">Contact Us</a>
                     </li>
                     <li>
-                        <a href="../pages/search.html">Search</a>
+                        <a href="../pages/search.html" class="active">Search</a>
                     </li>
                 </ul>
                 <div class="icon_header">
@@ -42,12 +44,12 @@
             </div>
         </div>
     </header>
-    <aside id="aside_main">
+    <aside id="aside_main" class="hidden">
         <div class="welcome_admin">
             <h3>Join Us</h3>
-            <input type="text" name="" id="" placeholder="Full name">
-            <input type="mail" name="" id="" placeholder="Email">
-            <button>Join</button>
+            <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
+            <input type="email" name="email" id="join_email" placeholder="Email">
+            <button id="joinButton">Join</button>
         </div>
     </aside>
     <section id="search_section">
@@ -61,7 +63,7 @@
                     <button>Search</button>
                 </div>
                 <div class="search_card">
-                    <div>
+                    <div id="img_in_search">
                         <img src="../imgs/image 2 (1).png" alt="">
                     </div>
                     <div class="words">
@@ -131,12 +133,6 @@
                     <a href="#"> Buyer help
                     </a>
                 </span>
-                <div class="numb_btn">
-                    <span>
-                        +38 (071) 339-16-26
-                    </span>
-                    <button>Request a call </button>
-                </div>
             </div>
             <ul class="none">
                 <li>
@@ -155,6 +151,12 @@
                     <a href="./assets/pages/search.html">Search</a>
                 </li>
             </ul>
+            <div class="numb_btn">
+                <span>
+                    +38 (071) 339-16-26
+                </span>
+                <button>Request a call </button>
+            </div>
         </div>
     </footer>
 </body>
