@@ -107,6 +107,12 @@ footer .container {
     border: 1px solid #E16A00;
 }
 
+#color h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333333;
+}
+
 .numb_btn span {
     font-size: 12px;
     font-weight: 900;

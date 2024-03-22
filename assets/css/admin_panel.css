@@ -147,6 +147,7 @@
 .input_icon input {
     width: 395px;
     height: 41px;
+    padding: 20pxв;
     border-radius: 34px;
     padding-left: 20px;
     font-size: 14px;
@@ -222,6 +223,7 @@
     box-shadow: 0px 4px 18px 0px #9EA8BD4F;
     border: 1px solid #E2E6EE;
     color: #030102;
+    padding: 15px;
 }
 
 .input_spans span {
@@ -231,6 +233,69 @@
 
 .input_spans .description_input {
     height: 90px;
+    border-radius: 10px;
+    border: 1px solid #E2E6EE;
+    padding: 8px, 12px, 8px, 12px;
+    box-shadow: 0px 4px 18px 0px #9EA8BD4F;
+}
+
+.join_us_table {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.flx_cntr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.litt_cntr {
+    width: 30%!important;
+}
+
+.line_join {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #720418;
+    height: 48px;
+}
+
+.line_join span {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dif_color {
+    background-color: white!important;
+}
+
+.dif_color span {
+    color: black;
+}
+
+.morewdth {
+    width: 94%;
+}
+
+.admin_icon a {
+    color: black;
+}
+
+#books_admin {
+    margin-top: 100px;
+}
+
+#contact_admin {
+    margin-top: 100px;
+}
+
+#join_us_admin {
+    margin-top: 100px;
 }
 
 .input_spans button {
