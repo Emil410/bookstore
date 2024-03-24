@@ -14,6 +14,45 @@
 </head>
 
 <body>
+    <div id="aside_main" class="hidden">
+        <div class="welcome_admin">
+            <h3>Join Us</h3>
+            <i class="fa-solid fa-x" id="close_aside"></i>
+            <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
+            <input type="email" name="email" id="join_email" placeholder="Email">
+            <button id="joinButton">Join</button>
+        </div>
+    </div>
+    <aside id="right_bar">
+        <i class="fa-solid fa-x" id="closeRightBar"></i>
+        <ul>
+            <li>
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Catalog
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About Store
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Search
+                </a>
+            </li>
+        </ul>
+    </aside>
     <header>
         <div class="container">
             <div class="logo_ul_li">
@@ -41,18 +80,13 @@
                     <a href="#" id="joinLink">
                         <i class="fa-regular fa-user"></i> Join us
                     </a>
+                    <a href="#" id="toggleRightBar">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
-    <aside id="aside_main" class="hidden">
-        <div class="welcome_admin">
-            <h3>Join Us</h3>
-            <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
-            <input type="email" name="email" id="join_email" placeholder="Email">
-            <button id="joinButton">Join</button>
-        </div>
-    </aside>
     <section id="contact_us_section">
         <div class="container">
             <h3>Contact Us</h3>
@@ -100,45 +134,72 @@
                 <img src="../imgs/Лого (1).png" alt="" />
             </div>
             <div class="footer_words">
-                <span>Popular
-                    <a href="#">
-                        Programming
-                    </a>
-                    <a href="#"> Psychology
-                    </a>
-                    <a href="#"> Books for children
-                    </a>
-                    <a href="">Business</a>
-                </span>
-                <span>Cash
-                    <a href="#">
-                        Delivery
-                    </a>
-                    <a href="#">Payment</a>
-                    <a href="#">About the store</a>
-                </span>
-                <span>Help
-                    <a href="#">
-                        Contacts
-                    </a>
-                    <a href="#"> Purchase returns
-                    </a>
-                    <a href="#"> Buyer help
-                    </a>
-                </span>
+                <ul>
+                    <li>
+                        Popular
+                    </li>
+                    <li>
+                        <a href="#">
+                            Programming
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"> 
+                            Psychology
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Books for children
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Business</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Cash
+                    </li>
+                    <li>
+                        <a href="#">
+                            Delivery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Payment</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/about.html">About the store</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Help
+                    </li>
+                    <li>
+                        <a href="./assets/pages/contact.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#"> Purchase returns</a>
+                    </li>
+                    <li>
+                        <a href="#"> Buyer help</a>
+                    </li>
+                </ul>
             </div>
             <ul class="none">
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./catalog.html">Catalog</a>
+                    <a href="./assets/pages/catalog.html">Catalog</a>
                 </li>
                 <li>
-                    <a href="./about.html">About Store</a>
+                    <a href="./assets/pages/about.html">About Store</a>
                 </li>
                 <li>
-                    <a href="./contact.html">Contact Us</a>
+                    <a href="./assets/pages/contact.html">Contact Us</a>
                 </li>
                 <li>
                     <a href="./assets/pages/search.html">Search</a>

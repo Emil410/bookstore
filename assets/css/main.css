@@ -137,11 +137,16 @@ footer .footer_words {
     gap: 50px;
 }
 
-.footer_words span {
+.footer_words ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_words li {
     padding-top: 10px;
     font-size: 18px;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 10px;
     color: #FFFFFF;
 }
 
@@ -183,12 +188,6 @@ footer .footer_words {
     color: #241400;
 }
 
-footer ul {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-}
-
 .none {
     display: none;
 }
@@ -208,6 +207,7 @@ footer ul {
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    position: absolute;
 }
 
 #welcome_section h3 {
@@ -225,6 +225,9 @@ footer ul {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.5);
 }
 
 #aside_main.hidden {
@@ -232,7 +235,14 @@ footer ul {
 }
 
 .overlay {
-    background-color: #00000080;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
 }
 
 .header-transparent {
@@ -284,9 +294,70 @@ footer a {
     margin-top: 200px;
 }
 
+#right_bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 1px;
+    width: 100%;
+    height: 100%;
+    background: #241400E5;
+    z-index: 1002;
+    transition: right 0.3s ease;
+    padding-top: 100px;
+}
+
+#right_bar a {
+    color: #F2F2F2;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 33.35px;
+    padding-right: 10px;
+}
+
+#right_bar li {
+    margin-top: 15px;
+    text-align: right;
+}
+
+#right_bar.open {
+    display: block;
+}
+
+aside i {
+    position: relative;
+    left: 96%;
+    bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #F2F2F2;
+}
+
+.welcome_admin i {
+    position: relative;
+    left: 45%;
+    bottom: 13%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#toggleRightBar {
+    display: none;
+}
+
 @media only screen and (max-width:1000px) {
     footer .container {
         gap: 0px;
+    }
+    header ul {
+        display: flex;
+        gap: 10px;
+    }
+    header a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #241400;
     }
 }
 
@@ -316,6 +387,45 @@ footer a {
         align-items: center;
         width: 100%;
     }
+    .welcome_admin {
+        width: 462px;
+        height: 360px;
+        background-color: white;
+        border: 1px solid #CECECE;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .welcome_admin input {
+        width: 352.94px;
+        height: 50.54px;
+        display: flex;
+        border-radius: 5px;
+        padding: 20px;
+        flex-direction: column;
+        border: 1px solid #CECECE;
+        font-size: 19px;
+        font-weight: 400;
+        color: #797667;
+    }
+    .welcome_admin button {
+        font-size: 19px;
+        cursor: pointer;
+        font-weight: 700;
+        width: 352.94px;
+        height: 74.54px;
+        margin-top: 40px;
+        color: #FFFFFF;
+        border: 0;
+        border-radius: 5px;
+        background-color: #E16A00;
+    }
+    #toggleRightBar {
+        display: inline-block;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -324,7 +434,7 @@ footer a {
         margin: 0 auto;
     }
     #img_header {
-        width: 40%;
+        width: 48%;
     }
     #img_header img {
         width: 100%;
@@ -353,5 +463,41 @@ footer a {
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+    .welcome_admin {
+        width: 302px;
+        height: 300px;
+        background-color: white;
+        border: 1px solid #CECECE;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .welcome_admin input {
+        width: 252.94px;
+        height: 50.54px;
+        display: flex;
+        border-radius: 5px;
+        padding: 20px;
+        flex-direction: column;
+        border: 1px solid #CECECE;
+        font-size: 19px;
+        font-weight: 400;
+        color: #797667;
+    }
+    .welcome_admin button {
+        font-size: 19px;
+        cursor: pointer;
+        font-weight: 700;
+        width: 212.94px;
+        height: 54.54px;
+        margin-top: 10px;
+        color: #FFFFFF;
+        border: 0;
+        border-radius: 5px;
+        background-color: #E16A00;
     }
 }

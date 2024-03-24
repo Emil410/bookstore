@@ -14,13 +14,44 @@
 </head>
 
 <body>
-    <aside id="aside_main" class="hidden">
+    <div id="aside_main" class="hidden">
         <div class="welcome_admin">
             <h3>Join Us</h3>
+            <i class="fa-solid fa-x" id="close_aside"></i>
             <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
             <input type="email" name="email" id="join_email" placeholder="Email">
             <button id="joinButton">Join</button>
         </div>
+    </div>
+    <aside id="right_bar">
+        <i class="fa-solid fa-x" id="closeRightBar"></i>
+        <ul>
+            <li>
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Catalog
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About Store
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Search
+                </a>
+            </li>
+        </ul>
     </aside>
     <header>
         <div class="container">
@@ -50,6 +81,9 @@
                 <div class="icon_header">
                     <a href="#" id="joinLink">
                         <i class="fa-regular fa-user"></i> Join us
+                    </a>
+                    <a href="#" id="toggleRightBar">
+                        <i class="fa-solid fa-bars"></i>
                     </a>
                 </div>
             </div>
@@ -147,7 +181,8 @@
                 <div class="delivery">
                     <h3>Delivery</h3>
                     <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement
-                        and the selected delivery method. Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, aafter selecting the delivery city.<br/>                        More details </p>
+                        and the selected delivery method. Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, aafter selecting the delivery city.
+                        <br/> More details </p>
                 </div>
                 <div class="follow">
                     <h3 class="fllw">
@@ -174,32 +209,59 @@
                 <img src="./assets/imgs/Лого (1).png" alt="" />
             </div>
             <div class="footer_words">
-                <span>Popular
-                    <a href="#">
-                        Programming
-                    </a>
-                    <a href="#"> Psychology
-                    </a>
-                    <a href="#"> Books for children
-                    </a>
-                    <a href="#">Business</a>
-                </span>
-                <span>Cash
-                    <a href="#">
-                        Delivery
-                    </a>
-                    <a href="#">Payment</a>
-                    <a href="./assets/pages/about.html">About the store</a>
-                </span>
-                <span>Help
-                    <a href="./assets/pages/contact.html">
-                        Contacts
-                    </a>
-                    <a href="#"> Purchase returns
-                    </a>
-                    <a href="#"> Buyer help
-                    </a>
-                </span>
+                <ul>
+                    <li>
+                        Popular
+                    </li>
+                    <li>
+                        <a href="#">
+                            Programming
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"> 
+                            Psychology
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Books for children
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Business</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Cash
+                    </li>
+                    <li>
+                        <a href="#">
+                            Delivery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Payment</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/about.html">About the store</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Help
+                    </li>
+                    <li>
+                        <a href="./assets/pages/contact.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#"> Purchase returns</a>
+                    </li>
+                    <li>
+                        <a href="#"> Buyer help</a>
+                    </li>
+                </ul>
             </div>
             <ul class="none">
                 <li>
@@ -221,5 +283,7 @@
         </div>
     </footer>
 </body>
+
+</html>
 
 </html>

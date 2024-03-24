@@ -7,14 +7,53 @@
     <title>Catalog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="../js/JoinUs.js"></script>
-
+    <script defer src="../js/catalog.js"></script>
 </head>
 
 <body>
+    <div id="aside_main" class="hidden">
+        <div class="welcome_admin">
+            <h3>Join Us</h3>
+            <i class="fa-solid fa-x" id="close_aside"></i>
+            <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
+            <input type="email" name="email" id="join_email" placeholder="Email">
+            <button id="joinButton">Join</button>
+        </div>
+    </div>
+    <aside id="right_bar">
+        <i class="fa-solid fa-x" id="closeRightBar"></i>
+        <ul>
+            <li>
+                <a href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Catalog
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About Store
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Search
+                </a>
+            </li>
+        </ul>
+    </aside>
     <header>
         <div class="container">
             <div class="logo_ul_li">
@@ -42,18 +81,13 @@
                     <a href="#" id="joinLink">
                         <i class="fa-regular fa-user"></i> Join us
                     </a>
+                    <a href="#" id="toggleRightBar">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
-    <aside id="aside_main" class="hidden">
-        <div class="welcome_admin">
-            <h3>Join Us</h3>
-            <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
-            <input type="email" name="email" id="join_email" placeholder="Email">
-            <button id="joinButton">Join</button>
-        </div>
-    </aside>
     <section class="swipers_section">
         <div class="container">
             <div class="all_div">
@@ -65,7 +99,7 @@
                     <span>Clas</span>
                 </div>
             </div>
-            <div class="swiper mySwiper" id="swipers">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
@@ -74,120 +108,93 @@
                                 Order in Chaos
                             </h3>
                             <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
+                            <button class="readMoreButton">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <swiper-container class="mySwiper" init="false" id="swipers">
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                </swiper-container>
+                <div class="swiper-pagination"></div>
             </div>
+        </div>
     </section>
     <section class="swipers_section">
         <div class="container">
@@ -200,7 +207,7 @@
                     <span>Clas</span>
                 </div>
             </div>
-            <div class="swiper mySwiper" id="swipers">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
@@ -209,127 +216,100 @@
                                 Order in Chaos
                             </h3>
                             <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
+                            <button class="readMoreButton">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <swiper-container class="mySwiper" init="false" id="swipers">
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card">
-                            <img src="https://s3-alpha-sig.figma.com/img/003e/3138/f49a7abed21feda6f2b8f89f5604ccfc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMFXX~-toccmQkLaJBW~2HJ9tAq91lDdkHMSXUjFXVsR2~-XXJP8xeKFeNMdM4KxIr6mlTmZZlNgZlMQJrOYzahdkztlWXbo8FfaGK~I8ZtpxJs-ptVRptXt9MdHSjlMXlJmjkp2deLomg0OECQncSzs-hKh3-eNkHrlVTEBJhMmcGJ-XwnAlM5f8VU6Cb73A0EvnS8Y5R9Ly5o8Vb55GKfpQxNp05PqZZ6l80ctDtgtOmIR1n4nxAIDCIXUbyqUlfJe23CX0pUjb7Bk~EJjdyqOM0435Y-3cEJl77E1M87qGScz45kSB-mCRU98iFT9VnASauJlD9LYi8YEArTQDA__"
-                                alt="">
-                            <div class="words_btn">
-                                <h3>
-                                    Order in Chaos
-                                </h3>
-                                <span>Konstantin Koptelov</span>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                </swiper-container>
+                <div class="swiper-pagination"></div>
             </div>
+        </div>
     </section>
     <section class="swiper_section_second">
         <div class="container">
             <div class="all_div">
                 <h3>New releases</h3>
             </div>
-            <div class="swiper mySwiper" id="swipers">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
@@ -338,52 +318,91 @@
                                 Order in Chaos
                             </h3>
                             <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
-                        </div>
-                        <div class="card">
-                            <img src="../imgs/image 2.png" alt="">
-                            <h3>
-                                Order in Chaos
-                            </h3>
-                            <span>Konstantin Koptelov</span>
-                            <button>Read More</button>
+                            <button class="readMoreButton">Read More</button>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="../imgs/image 2.png" alt="">
+                            <h3>
+                                Order in Chaos
+                            </h3>
+                            <span>Konstantin Koptelov</span>
+                            <button class="readMoreButton">Read More</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -413,32 +432,59 @@
                 <img src="../imgs/Лого (1).png" alt="" />
             </div>
             <div class="footer_words">
-                <span>Popular
-                    <a href="#">
-                        Programming
-                    </a>
-                    <a href="#"> Psychology
-                    </a>
-                    <a href="#"> Books for children
-                    </a>
-                    <a href="">Business</a>
-                </span>
-                <span>Cash
-                    <a href="#">
-                        Delivery
-                    </a>
-                    <a href="#">Payment</a>
-                    <a href="#">About the store</a>
-                </span>
-                <span>Help
-                    <a href="#">
-                        Contacts
-                    </a>
-                    <a href="#"> Purchase returns
-                    </a>
-                    <a href="#"> Buyer help
-                    </a>
-                </span>
+                <ul>
+                    <li>
+                        Popular
+                    </li>
+                    <li>
+                        <a href="#">
+                            Programming
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"> 
+                            Psychology
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Books for children
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Business</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Cash
+                    </li>
+                    <li>
+                        <a href="#">
+                            Delivery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Payment</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/about.html">About the store</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Help
+                    </li>
+                    <li>
+                        <a href="./assets/pages/contact.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#"> Purchase returns</a>
+                    </li>
+                    <li>
+                        <a href="#"> Buyer help</a>
+                    </li>
+                </ul>
             </div>
             <ul class="none">
                 <li>
@@ -465,16 +511,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+
+
 </body>
 
 </html>
