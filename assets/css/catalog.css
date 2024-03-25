@@ -45,13 +45,17 @@
 .all_div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 280px;
 }
 
 .all_div span {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     line-height: 26px;
+}
+
+.all_div a {
+    color: black;
 }
 
 .spans {

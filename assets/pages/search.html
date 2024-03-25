@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/search.css">
+    <script defer src="../js/main.js"></script>
     <script defer src="../js/JoinUs.js"></script>
 </head>
 
@@ -96,10 +97,10 @@
             </h3>
             <div class="words_search_card">
                 <div class="input_btn">
-                    <input type="search" placeholder="Search">
-                    <button>Search</button>
+                    <input type="search" placeholder="Search" id="search_input">
+                    <button id="search_btn">Search</button>
                 </div>
-                <div class="search_card">
+                <!-- <div class="search_card">
                     <div id="img_in_search">
                         <img src="../imgs/image 2 (1).png" alt="">
                     </div>
@@ -110,10 +111,20 @@
                         <span>
                             Konstantin Koptelov
                         </span>
-                        <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement
-                            and the selected delivery method. Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city
+                        <p>
+                            We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery
+                            method. Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city
                         </p>
                     </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="search_section_two">
+        <div class="container">
+            <div id="results" class="results">
+                <div class="search_card" data-book-id="123">
+
                 </div>
             </div>
         </div>
@@ -191,7 +202,7 @@
                         <a href="./assets/pages/contact.html">Contacts</a>
                     </li>
                     <li>
-                        <a href="#"> Purchase returns</a>
+                        <a href="#">Purchase returns</a>
                     </li>
                     <li>
                         <a href="#"> Buyer help</a>
@@ -219,10 +230,16 @@
                 <span>
                     +38 (071) 339-16-26
                 </span>
-                <button>Request a call </button>
+                <button onclick="openWhatsApp()">Request a call </button>
             </div>
         </div>
     </footer>
+    <script>
+        function openWhatsApp() {
+            window.location.href = 'whatsapp://';
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>

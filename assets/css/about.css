@@ -16,7 +16,7 @@ footer img {
 }
 
 #second_div_img {
-    width: 45%;
+    width: 41%;
     margin-top: 70px;
 }
 
@@ -33,7 +33,7 @@ footer img {
 }
 
 #text_left_about {
-    width: 40%;
+    width: 59%;
 }
 
 .footer_words a {
@@ -75,7 +75,7 @@ footer img {
 .words_img {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    gap: 22px;
 }
 
 #about_section {
