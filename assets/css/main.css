@@ -4,7 +4,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Monserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -377,8 +377,12 @@ aside i {
     .footer_words span {
         display: none;
     }
+    footer .footer_words {
+        display: none;
+    }
     .none {
         display: flex;
+        justify-content: space-between;
     }
     .numb_btn {
         margin-top: 15px;
