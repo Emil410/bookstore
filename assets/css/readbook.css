@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#readbook_section {
+    margin-top: 100px;
+}
+
+.book-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.book-strong {
+    font-weight: bold;
+}

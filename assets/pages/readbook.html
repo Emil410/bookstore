@@ -4,16 +4,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/readbook.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-    <section id="read_section">
+    <div id="aside_main" class="hidden">
+        <div class="welcome_admin">
+            <h3>Join Us</h3>
+            <i class="fa-solid fa-x" id="close_aside"></i>
+            <input type="text" name="full_name" id="join_full_name" placeholder="Full name">
+            <input type="email" name="email" id="join_email" placeholder="Email">
+            <button id="joinButton">Join</button>
+        </div>
+    </div>
+    <aside id="right_bar">
+        <i class="fa-solid fa-x" id="closeRightBar"></i>
+        <ul>
+            <li>
+                <a href="../../index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="./catalog.html">
+                    Catalog
+                </a>
+            </li>
+            <li>
+                <a href="./about.html">
+                    About Store
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="./search.html">
+                    Search
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <header>
         <div class="container">
-            <div></div>
+            <div class="logo_ul_li">
+                <a href="../../index.html">
+                    <img src="../imgs/Лого.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/catalog.html">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About Store</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="../pages/search.html" class="active">Search</a>
+                    </li>
+                </ul>
+                <div class="icon_header">
+                    <a href="#" id="joinLink">
+                        <i class="fa-regular fa-user"></i> Join us
+                    </a>
+                    <a href="#" id="toggleRightBar">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="readbook_section">
+        <div class="container">
+            <div id="book_details"></div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div id="footer_img">
+                <img src="../imgs/Лого (1).png" alt="" />
+            </div>
+            <div class="footer_words">
+                <ul>
+                    <li>
+                        Popular
+                    </li>
+                    <li>
+                        <a href="#">
+                            Programming
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"> 
+                            Psychology
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Books for children
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Business</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Cash
+                    </li>
+                    <li>
+                        <a href="#">
+                            Delivery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Payment</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/about.html">About the store</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Help
+                    </li>
+                    <li>
+                        <a href="./assets/pages/contact.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#">Purchase returns</a>
+                    </li>
+                    <li>
+                        <a href="#"> Buyer help</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="none">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/catalog.html">Catalog</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/about.html">About Store</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="./assets/pages/search.html">Search</a>
+                </li>
+            </ul>
+            <div class="numb_btn">
+                <span>
+                    +38 (071) 339-16-26
+                </span>
+                <button onclick="openWhatsApp()">Request a call </button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function getBookDetails(bookId) {
+            $.ajax({
+                url: "https://www.googleapis.com/books/v1/volumes/" + bookId,
+                dataType: "json",
+                type: 'GET',
+                success: function(data) {
+                    displayBookDetails(data);
+                },
+                error: function() {
+                    console.log("Error!");
+                }
+            });
+        }
+
+        function displayBookDetails(bookData) {
+            let bookDetailsContainer = document.getElementById('book_details');
+            if (bookData.volumeInfo) {
+                let bookTitle = bookData.volumeInfo.title;
+                let bookAuthor = bookData.volumeInfo.authors ? bookData.volumeInfo.authors.join(", ") : "Unknown Author";
+                let bookDescription = bookData.volumeInfo.description ? bookData.volumeInfo.description : "No description available";
+                let bookImage = bookData.volumeInfo.imageLinks ? bookData.volumeInfo.imageLinks.thumbnail : "https://via.placeholder.com/150";
+
+                let bookHTML = `
+                <div id="book_details" class="book-details">
+                    <h2 class="book-title">${bookTitle}</h2>
+                    <img src="${bookImage}" alt="" class="book-image">
+                    <p class="book-description"><strong class="book-strong">Author(s):</strong> ${bookAuthor}</p>
+                    <p class="book-description"><strong class="book-strong">Description:</strong> ${bookDescription}</p>
+                </div>
+                `;
+                bookDetailsContainer.innerHTML = bookHTML;
+            }
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookId = urlParams.get('id');
+
+        if (bookId) {
+            getBookDetails(bookId);
+        } else {
+            console.log("Book ID not found in URL.");
+        }
+    </script>
 </body>
 
 </html>
