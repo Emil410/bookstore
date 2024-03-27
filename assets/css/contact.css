@@ -8,6 +8,7 @@
     font-weight: 400;
     font-family: Crimson Text;
     resize: none;
+    color: #CECECE;
 }
 
 #contact_us_section {
@@ -22,6 +23,7 @@
 
 #contact_us_section input {
     width: 50%;
+    color: #CECECE;
     height: 75px;
     font-family: Crimson Text;
     font-size: 23px;
@@ -88,8 +90,8 @@
 
 @media only screen and (max-width: 320px) {
     #f_section .fllw {
-        font-size: 15px;
         width: 250px;
+        font-size: 15px;
     }
     #f_section i {
         font-size: 23px;
@@ -98,10 +100,10 @@
         font-size: 28px;
     }
     #contact_us_section input {
-        font-size: 12px;
-        width: 243px;
         height: 38.02px;
-        border-radius: 5px
+        width: 243px;
+        border-radius: 5px;
+        font-size: 12px;
     }
     #contact_us_section #note {
         font-size: 12px;
