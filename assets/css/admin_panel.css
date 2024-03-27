@@ -105,6 +105,10 @@
     display: flex;
 }
 
+header {
+    display: none;
+}
+
 .add_search h3 {
     font-size: 30px;
     font-weight: 600;
@@ -312,15 +316,21 @@
     .down_gray {
         width: 70%;
     }
-}
-
-@media only screen and (max-width: 320px) {
     .left_div {
         display: none;
     }
     .admin_icon {
         display: none;
     }
+    .input_spans button {
+        width: 85%;
+    }
+    header {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 320px) {
     .input_icon input {
         width: 230px;
         height: 36px;

@@ -520,14 +520,17 @@
                 <span>
                     +38 (071) 339-16-26
                 </span>
-                <button>Request a call </button>
+                <button onclick="openWhatsApp()">Request a call </button>
             </div>
         </div>
     </footer>
-
+    <script>
+        function openWhatsApp() {
+            window.location.href = 'whatsapp://';
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
 </body>
 
 </html>

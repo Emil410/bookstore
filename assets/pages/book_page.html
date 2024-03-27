@@ -233,7 +233,7 @@
                 <span>
                     +38 (071) 339-16-26
                 </span>
-                <button>Request a call </button>
+                <button onclick="openWhatsApp()">Request a call </button>
             </div>
             <ul class="none">
                 <li>
@@ -254,6 +254,11 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function openWhatsApp() {
+            window.location.href = 'whatsapp://';
+        }
+    </script>
 </body>
 
 </html>

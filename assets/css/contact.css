@@ -8,7 +8,6 @@
     font-weight: 400;
     font-family: Crimson Text;
     resize: none;
-    color: #CECECE;
 }
 
 #contact_us_section {
@@ -23,7 +22,7 @@
 
 #contact_us_section input {
     width: 50%;
-    color: #CECECE;
+    color: #797667;
     height: 75px;
     font-family: Crimson Text;
     font-size: 23px;

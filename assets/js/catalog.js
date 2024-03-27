@@ -3,7 +3,6 @@ document.querySelectorAll('.readMoreButton').forEach(function(button) {
         window.location.href = './book_page.html';
     });
 });
-
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -26,3 +25,25 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
+
+function bookSearch() {
+    var searchQuery = "harry potter";
+    var apiUrl = "https://www.googleapis.com/books/v1/volumes?q=" + encodeURIComponent(searchQuery);
+
+    $.ajax({
+        url: apiUrl,
+        dataType: "json",
+        type: 'GET',
+        success: function(data) {
+            if (!data || !data.items || data.items.length === 0) {
+                console.error("No data received from Google Books API or no items found.");
+                return;
+            }
+            console.log("Data received from Google Books API:", data);
+            displayResults(data.items);
+        },
+        error: function(xhr, status, error) {
+            console.error("Error fetching data from Google Books API:", error);
+        }
+    });
+}

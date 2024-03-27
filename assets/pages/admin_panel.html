@@ -15,6 +15,39 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <div class="logo_ul_li">
+                <div id="img_header">
+                    <a href="#">
+                        <img src="../imgs/Лого.png" alt="" />
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/catalog.html">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/about.html">About Store</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="./assets/pages/search.html">Search</a>
+                    </li>
+                </ul>
+                <div class="icon_header">
+                    <a href="#" id="toggleRightBar">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
     <section id="admin_panel_section">
         <div class="left_div">
             <div class="container">
@@ -239,16 +272,16 @@
                                     <span>#</span>
                                 </div>
                                 <div class="flx_cntr">
-                                    <span>Full Name</span>
+                                    <span id="Full_name">Full Name</span>
                                 </div>
                                 <div class="flx_cntr">
-                                    <span>Address</span>
+                                    <span id="address">Address</span>
                                 </div>
                                 <div class="flx_cntr">
-                                    <span>Email Address</span>
+                                    <span id="mail_address">Email Address</span>
                                 </div>
                                 <div class="flx_cntr">
-                                    <span>Phone Number</span>
+                                    <span id="phone_number">Phone Number</span>
                                 </div>
                             </div>
                             <div class="line_join dif_color">
@@ -274,6 +307,97 @@
             </div>
         </div>
     </section>
+    <!-- <div class="flx_cntr litt_cntr">
+        <span>#</span>
+    </div>
+    <div class="flx_cntr">
+        <span id="Full_name">Full Name</span>
+    </div>
+    <div class="flx_cntr">
+        <span id="address">Address</span>
+    </div>
+    <div class="flx_cntr">
+        <span id="mail_address">Email Address</span>
+    </div>
+    <div class="flx_cntr">
+        <span id="phone_number">Phone Number</span>
+    </div> -->
+    <!-- <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyDXZqCGNNISoy8QEmTwMH4WwD3JqyhvV_E",
+          authDomain: "fir-1-182bd.firebaseapp.com",
+          databaseURL: "https://fir-1-182bd-default-rtdb.firebaseio.com",
+          projectId: "fir-1-182bd",
+          storageBucket: "fir-1-182bd.appspot.com",
+          messagingSenderId: "61405829286",
+          appId: "1:61405829286:web:cb041c6d12e63a10d5bc67"
+        };
+        const app = initializeApp(firebaseConfig);
+        import{getDatabase, ref, get} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        const db = getDatabase();
+        let flname = document.getElementById("Full_name");
+        let address = document.getElementById("address");
+        let mail = document.getElementById("mail_address");
+        let phoneNumb = document.getElementById("phone_number");
+        function getInfo() {
+            const dbref = ref(db);
+            get(child(dbref, 'InfoAboutEmployee')).then((employee)=>{
+                employee.forEach(emp =>{
+
+                })
+            })
+        }
+      </script> -->
+      <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDXZqCGNNISoy8QEmTwMH4WwD3JqyhvV_E",
+          authDomain: "fir-1-182bd.firebaseapp.com",
+          databaseURL: "https://fir-1-182bd-default-rtdb.firebaseio.com",
+          projectId: "fir-1-182bd",
+          storageBucket: "fir-1-182bd.appspot.com",
+          messagingSenderId: "61405829286",
+          appId: "1:61405829286:web:cb041c6d12e63a10d5bc67"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+
+        function getInfo() {
+            console.log("salam");
+            const dbref = ref(db, 'InfoAboutEmployee');
+            get(dbref).then((snapshot) => {
+                if (snapshot.exists()) {
+                    const data = snapshot.val();
+                    document.getElementById('Full_name').textContent = data.fullname || "Full Name";
+                    document.getElementById('address').textContent = data.address || "Address";
+                    document.getElementById('mail_address').textContent = data.email || "Email Address";
+                    document.getElementById('phone_number').textContent = data.phonenumber || "Phone Number";
+                } else {
+                    console.log("No data available");
+                }
+            }).catch((error) => {
+                console.error("Error getting data:", error);
+            });
+        }
+
+        getInfo();
+        const dbref = ref(db, 'InfoAboutEmployee');
+        onValue(dbref, (snapshot) => {
+        if (snapshot.exists()) {
+            const data = snapshot.val();
+            document.getElementById('Full_name').textContent = data.fullname || "Full Name";
+            document.getElementById('address').textContent = data.address || "Address";
+            document.getElementById('mail_address').textContent = data.email || "Email Address";
+            document.getElementById('phone_number').textContent = data.phonenumber || "Phone Number";
+        } else {
+            console.log("No data available");
+        }
+        });
+    </script>
 </body>
 
 </html>
